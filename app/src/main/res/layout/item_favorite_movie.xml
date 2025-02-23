@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:strokeColor="#00000000"
+    app:cardCornerRadius="20dp"
+    app:strokeWidth="0dp"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/randombg"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivMoviePoster"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            android:background="@drawable/rounded_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/placeholder_image"/>
+
+        <TextView
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="12dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/geologicasemibold"
+            app:layout_constraintStart_toEndOf="@id/ivMoviePoster"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnRemoveFavorite"
+            tools:text="Film Başlığı"/>
+
+        <TextView
+            android:id="@+id/tvReleaseDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:textColor="#BFBFBF"
+            android:layout_marginTop="8dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/geologicaregular"
+            app:layout_constraintStart_toEndOf="@id/ivMoviePoster"
+            app:layout_constraintTop_toBottomOf="@id/tvMovieTitle"
+            tools:text="Yayın Tarihi"/>
+
+        <TextView
+            android:id="@+id/tvDetails"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:maxLines="3"
+            android:layout_marginStart="14dp"
+            android:textColor="#B86812"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/geologicathin"
+            app:layout_constraintStart_toEndOf="@id/ivMoviePoster"
+            app:layout_constraintTop_toBottomOf="@id/tvReleaseDate"
+            tools:text="Yayın Tarihi"/>
+
+        <ImageButton
+            android:id="@+id/btnRemoveFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_delete_24"
+            android:contentDescription="Remove From Favorites"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

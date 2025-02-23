@@ -1,0 +1,13 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+    <!-- Hafif sağdan kayarak gelme efekti -->
+    <translate
+        android:fromXDelta="20%p"
+        android:toXDelta="0"
+        android:duration="300" />
+    <!-- Şeffaflıktan yavaş yavaş görünür hale gelme -->
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="300" />
+</set>

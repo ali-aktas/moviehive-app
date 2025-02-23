@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RoundedImageStyle">rounded_bg</style>
+
+    <style name="RoundedCorners" parent="">
+        <item name="strokeWidth">0dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>  </style>
+
+</resources>
